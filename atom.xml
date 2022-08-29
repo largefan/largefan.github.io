@@ -41,6 +41,79 @@
   </entry>
   
   <entry>
+    <title>HTTP</title>
+    <link href="https://largefan.github.io/posts/5.html"/>
+    <id>https://largefan.github.io/posts/5.html</id>
+    <published>2021-10-08T22:23:11.000Z</published>
+    <updated>2022-08-29T11:09:23.913Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="一、什么是HTTP？"><a href="#一、什么是HTTP？" class="headerlink" title="一、什么是HTTP？"></a>一、什么是HTTP？</h2><p>HTTP（hypertext transport protocol）协议『超文本传输协议』，协议详细规定了浏览器和万维网服务器之间互相通信的规则。即约定, 规则。</p><h2 id="二、请求报文（request）："><a href="#二、请求报文（request）：" class="headerlink" title="二、请求报文（request）："></a>二、请求报文（request）：</h2><pre class="line-numbers language-none"><code class="language-none">行包括三部分：1.请求类型：POST  2.url的路径（写查询字符串、路径）：/s?ie=utf-8  3.（http协议版本）：HTTP/1.1 头格式为:名字:空格值  Host: baidu.com   Cookie: name=baidu      Content-type: application/x-www-form-urlencoded User-Agent: chrome 83空行体如果是：get请求：请求体为空post请求：请求体不为空 username=admin&amp;password=admin<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="三、响应报文（response）"><a href="#三、响应报文（response）" class="headerlink" title="三、响应报文（response）:"></a>三、响应报文（response）:</h2><pre class="line-numbers language-none"><code class="language-none">行1.（http协议版本）：HTTP/1.1         2.(响应状态码)：200           3.(响应状态字符串):OK头Content-Type: text/html;charset=utf-8 Content-length: 2048 Content-encoding: gzip空行体返回结果<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><blockquote><p>响应状态码：</p><blockquote><p>200 - 请求成功，已经正常处理完毕</p><p>301 - 请求永久重定向，转移到其它URL</p><p>302 - 请求临时重定向</p><p>304 - 请求被重定向到客户端本地缓存</p><p>400 - 客户端请求存在语法错误</p><p>401 - 客户端请求没有经过授权</p><p>403 - 客户端的请求被服务器拒绝，一般为客户端没有访问权限</p><p>404 - 客户端请求的URL在服务端不存在</p><p>500 - 服务端永久错误</p></blockquote></blockquote><h2 id="四、GET响应体控制台查看位置："><a href="#四、GET响应体控制台查看位置：" class="headerlink" title="四、GET响应体控制台查看位置："></a>四、GET响应体控制台查看位置：</h2><p><img src="https://s1.imagehub.cc/images/2022/08/29/get.jpg" alt="GET响应体控制台查看位置"></p><h2 id="五、注意：get没有请求体！"><a href="#五、注意：get没有请求体！" class="headerlink" title="五、注意：get没有请求体！"></a>五、注意：get没有请求体！</h2><p><img src="https://s1.imagehub.cc/images/2022/08/29/get46107bd3496f34a0.jpg" alt="get没有请求体"></p><h2 id="六、post请求体控制台查看位置："><a href="#六、post请求体控制台查看位置：" class="headerlink" title="六、post请求体控制台查看位置："></a>六、post请求体控制台查看位置：</h2><p><img src="https://s1.imagehub.cc/images/2022/08/29/post.jpg" alt="post请求体控制台查看位置"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;一、什么是HTTP？&quot;&gt;&lt;a href=&quot;#一、什么是HTTP？&quot; class=&quot;headerlink&quot; title=&quot;一、什么是HTTP？&quot;&gt;&lt;/a&gt;一、什么是HTTP？&lt;/h2&gt;&lt;p&gt;HTTP（hypertext transport protocol）协议『超</summary>
+      
+    
+    
+    
+    <category term="笔记" scheme="https://largefan.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="HTTP" scheme="https://largefan.github.io/tags/HTTP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ajax的基本使用</title>
+    <link href="https://largefan.github.io/posts/4.html"/>
+    <id>https://largefan.github.io/posts/4.html</id>
+    <published>2021-10-08T21:34:10.000Z</published>
+    <updated>2022-08-29T11:12:36.798Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="一、Ajax简介"><a href="#一、Ajax简介" class="headerlink" title="一、Ajax简介"></a>一、Ajax简介</h2><ol><li><p>AJAX 全称为 Asynchronous JavaScript And XML，就是异步的 JS 和 XML。</p></li><li><p>AJAX 不是新的编程语言，而是一种将现有的标准组合在一起使用的新方式。</p></li><li><p>通过 AJAX 可以在浏览器中向服务器发送异步请求，最大的优势：无刷新获取数据。</p></li></ol><h2 id="二、XML"><a href="#二、XML" class="headerlink" title="二、XML"></a>二、XML</h2><ol><li><p>XML 和 HTML 类似，不同的是 HTML 中都是预定义标签，而 XML 中没有预定义标签，全都是自定义标签。</p></li><li><p>现在已经被 JSON 取代了。</p></li></ol><h2 id="三、Ajax优缺点"><a href="#三、Ajax优缺点" class="headerlink" title="三、Ajax优缺点"></a>三、Ajax优缺点</h2><ul><li><p>Ajax的优点：</p><ol><li>可以无需刷新页面而与服务器端进行通信。</li><li>允许你根据用户事件来更新部分页面内容。</li></ol></li><li><p>Ajax的缺点:</p><ol><li><p>没有浏览历史，不能回退</p></li><li><p>存在跨域问题(同源)</p></li><li><p>SEO 不友好</p></li></ol></li></ul><h2 id="三、Ajax-的使用"><a href="#三、Ajax-的使用" class="headerlink" title="三、Ajax 的使用"></a>三、Ajax 的使用</h2><pre class="line-numbers language-none"><code class="language-none">XMLHttpRequest，AJAX 的所有操作都是通过该对象进行的。1. 创建 XMLHttpRequest 对象var xhr = new XMLHttpRequest();2.  设置请求信息xhr.open(method, url);//可以设置请求头，一般不设置xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');3. 发送请求           xhr.send(body) //get 请求不传 body 参数，只有 post 请求使用4. 接收响应           //xhr.responseXML 接收 xml 格式的响应数据      //xhr.responseText 接收文本格式的响应数据      xhr.onreadystatechange = function (){if(xhr.readyState == 4 &amp;&amp; xhr.status == 200){var text = xhr.responseText;console.log(text);}}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="四、Ajax请求状态"><a href="#四、Ajax请求状态" class="headerlink" title="四、Ajax请求状态"></a>四、Ajax请求状态</h2><p><strong>xhr.readyState 可以用来查看请求当前的状态。</strong></p><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/XMLHttpRequest/readyState">介绍</a></p><table><thead><tr><th align="center">值</th><th align="center">状态</th><th align="center">描述</th></tr></thead><tbody><tr><td align="center">0</td><td align="center">UNSENT</td><td align="center">代理被创建，但尚未调用 open() 方法。</td></tr><tr><td align="center">1</td><td align="center">OPENED</td><td align="center">open() 方法已经被调用。</td></tr><tr><td align="center">2</td><td align="center">HEADERS_RECEIVED</td><td align="center">send() 方法已经被调用，并且头部和状态已经可获得。</td></tr><tr><td align="center">3</td><td align="center">LOADING</td><td align="center">下载中； responseText 属性已经包含部分数据。</td></tr><tr><td align="center">4</td><td align="center">DONE</td><td align="center">下载操作已完成。</td></tr></tbody></table><pre class="line-numbers language-none"><code class="language-none">0：表示 XMLHttpRequest 实例已经生成，但是 open()方法还没有被调用。1：open() 方法已经被触发。在这个状态中，可以通过  setRequestHeader() 方法来设置请求的头部。2：表示 send()方法已经执行，并且头信息和状态码已经收到。3：表示正在接收服务器传来的 body 部分的数据。（响应体部分正在被接收。如果 responseType 属性是“text”或空字符串， responseText 将会在载入的过程中拥有部分响应数据。）4： 表示服务器数据已经完全接收，或者本次接收已经失败了。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="五、解决-IE-缓存问题"><a href="#五、解决-IE-缓存问题" class="headerlink" title="五、解决 IE  缓存问题"></a>五、解决 IE  缓存问题</h2><blockquote><p>问题：在一些浏览器中(IE),由于缓存机制的存在，ajax 只会发送的第一次请求，剩<br>余多次请求不会在发送给浏览器而是直接加载缓存中的数据。</p><blockquote><p>解决方式：浏览器的缓存是根据 url 地址来记录的，所以我们只需要修改 url 地址<br>即可避免缓存问题。<br>xhr.open(“get”,”/testAJAX?t=”+Date.now());</p></blockquote></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;一、Ajax简介&quot;&gt;&lt;a href=&quot;#一、Ajax简介&quot; class=&quot;headerlink&quot; title=&quot;一、Ajax简介&quot;&gt;&lt;/a&gt;一、Ajax简介&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;AJAX 全称为 Asynchronous JavaScript And </summary>
+      
+    
+    
+    
+    <category term="笔记" scheme="https://largefan.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="Ajax" scheme="https://largefan.github.io/tags/Ajax/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Gitee配置与注意事项</title>
+    <link href="https://largefan.github.io/posts/3.html"/>
+    <id>https://largefan.github.io/posts/3.html</id>
+    <published>2021-10-07T16:00:00.000Z</published>
+    <updated>2022-08-29T03:00:02.225Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Gitee配置"><a href="#Gitee配置" class="headerlink" title="Gitee配置"></a>Gitee配置</h2><h3 id="一、配置Git操作的用户名、邮箱。"><a href="#一、配置Git操作的用户名、邮箱。" class="headerlink" title="一、配置Git操作的用户名、邮箱。"></a>一、配置Git操作的用户名、邮箱。</h3><pre class="line-numbers language-none"><code class="language-none">1.右键打开Git Bash，输入如下命令：$ git config --global user.name "你的名字或昵称"$ git config --global user.email "你的邮箱"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h3 id="二、配置ssh公钥："><a href="#二、配置ssh公钥：" class="headerlink" title="二、配置ssh公钥："></a>二、配置ssh公钥：</h3><pre class="line-numbers language-none"><code class="language-none">$ ssh-keygen -t rsa -C "你的邮箱"<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><blockquote><ol><li>如果你的电脑输入过这个命令则会出现：</li></ol><blockquote><pre class="line-numbers language-none"><code class="language-none">Enter file in which to save the key (/c/Users/林子彬/.ssh/id_rsa):/c/Users/林子彬/.ssh/id_rsa already exists.Overwrite (y/n)?翻译过来就是：输入保存密钥的文件（/c/Users）/林子彬/.ssh/id_rsa）：/c/用户/林子彬/.ssh/id_rsa已经存在。是否覆盖（是/否）？解决方法：直接回车不用管，直接执行第3步。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></blockquote></blockquote><h3 id="三、复制生成的SSH-key。"><a href="#三、复制生成的SSH-key。" class="headerlink" title="三、复制生成的SSH key。"></a>三、复制生成的SSH key。</h3><pre class="line-numbers language-none"><code class="language-none">输入如下命令生成SSH key:$ cat ~/.ssh/id_rsa.pub<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h3 id="四、打开Gitee。"><a href="#四、打开Gitee。" class="headerlink" title="四、打开Gitee。"></a>四、打开Gitee。</h3><pre class="line-numbers language-none"><code class="language-none">主页右上角 「个人设置」-&gt;「安全设置」-&gt;「SSH公钥」-&gt;「添加公钥」 ，复制生成的 public key(公钥)，添加到当前账户中。<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="五、测试SSH-key是否配置ok："><a href="#五、测试SSH-key是否配置ok：" class="headerlink" title="五、测试SSH key是否配置ok："></a>五、测试SSH key是否配置ok：</h3><pre class="line-numbers language-none"><code class="language-none">$ ssh -T git@gitee.com返回这个即配置成功：Hi 大风扇! You've successfully authenticated, but GITEE.COM does not provide shell access.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h2 id="Gitee注意事项"><a href="#Gitee注意事项" class="headerlink" title="Gitee注意事项"></a>Gitee注意事项</h2><h3 id="一、Git的基本操作："><a href="#一、Git的基本操作：" class="headerlink" title="一、Git的基本操作："></a>一、Git的基本操作：</h3><pre class="line-numbers language-none"><code class="language-none">$ git add .                          #将当前目录所有文件添加到git暂存区$ git commit -m "my commit"          #提交并备注提交信息$ git push                           #将本地提交推送到远程仓库<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h3 id="二、在Gitee上，下载文件："><a href="#二、在Gitee上，下载文件：" class="headerlink" title="二、在Gitee上，下载文件："></a>二、在Gitee上，下载文件：</h3><pre class="line-numbers language-none"><code class="language-none">$ git clone git@gitee.com:large-fan/basic-use-of-gitee.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><blockquote><p>注意事项：</p><blockquote><ol><li>$ git clone + 你想要下载的仓库地址</li><li>打开==自己账号==下的仓库，点击 “克隆/下载” 按钮，选择 “SSH”, 点击“复制”</li></ol></blockquote></blockquote><h3 id="三、上传文件到-Gitee："><a href="#三、上传文件到-Gitee：" class="headerlink" title="三、上传文件到 Gitee："></a>三、上传文件到 Gitee：</h3><ol><li>如果你想上传文件到gitee仓库，而gitee下载的本地原<strong>文件 又被 删除</strong>，那么你就<strong>只能上gitee把仓库文件下载回本地</strong>，然后才能进行上传<strong>文件操作</strong>（即执行上面的一、代码，即可上传成功）。</li></ol><h3 id="四、总结遇到的问题："><a href="#四、总结遇到的问题：" class="headerlink" title="四、总结遇到的问题："></a>四、总结遇到的问题：</h3><ul><li><p>下载后找不到该文件，经常在github或gitee上下载文件，但是发现这样git clone下后不知道文件给放哪了？（一般是放解决方法1）</p><ol><li>解决方法1：一般情况下会存放在命令行对应的目录下： win + R &gt; cmd 查看命令行地址：C:\Users\林子彬&gt;</li><li>解决方法2：如果想要改变git后的存放地址，直接cd 改变命令行的地址然后再执行下载命令。</li><li>解决方法3：shift+右键，选择打开powershell窗口，然后执行下载命令。</li></ol></li><li><p>删除问题：把本地仓库里的代码一删除后，码云仓库中的代码也跟着删除了。</p><ol><li>解决方法：登录码云代码仓库，点击管理，选择功能设置把禁止仓库同步勾上就行了。</li></ol></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Gitee配置&quot;&gt;&lt;a href=&quot;#Gitee配置&quot; class=&quot;headerlink&quot; title=&quot;Gitee配置&quot;&gt;&lt;/a&gt;Gitee配置&lt;/h2&gt;&lt;h3 id=&quot;一、配置Git操作的用户名、邮箱。&quot;&gt;&lt;a href=&quot;#一、配置Git操作的用户名、邮箱</summary>
+      
+    
+    
+    
+    <category term="Git" scheme="https://largefan.github.io/categories/Git/"/>
+    
+    
+    <category term="Gitee" scheme="https://largefan.github.io/tags/Gitee/"/>
+    
+  </entry>
+  
+  <entry>
     <title>markdown语法</title>
     <link href="https://largefan.github.io/posts/2.html"/>
     <id>https://largefan.github.io/posts/2.html</id>

@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://largefan.github.io/posts/4.html</loc>
+    
+    <lastmod>2022-08-29</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://largefan.github.io/posts/5.html</loc>
+    
+    <lastmod>2022-08-29</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://largefan.github.io/posts/3.html</loc>
+    
+    <lastmod>2022-08-29</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://largefan.github.io/posts/2.html</loc>
     
     <lastmod>2022-08-28</lastmod>
@@ -109,29 +130,50 @@
 
   <url>
     <loc>https://largefan.github.io/</loc>
-    <lastmod>2022-08-28</lastmod>
+    <lastmod>2022-08-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
+    <loc>https://largefan.github.io/tags/Gitee/</loc>
+    <lastmod>2022-08-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://largefan.github.io/tags/Ajax/</loc>
+    <lastmod>2022-08-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://largefan.github.io/tags/HTTP/</loc>
+    <lastmod>2022-08-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://largefan.github.io/tags/hexo/</loc>
-    <lastmod>2022-08-28</lastmod>
+    <lastmod>2022-08-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://largefan.github.io/tags/markdown/</loc>
-    <lastmod>2022-08-28</lastmod>
+    <lastmod>2022-08-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://largefan.github.io/tags/%E9%9D%A2%E8%AF%95/</loc>
-    <lastmod>2022-08-28</lastmod>
+    <lastmod>2022-08-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -139,22 +181,29 @@
 
   
   <url>
-    <loc>https://largefan.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
-    <lastmod>2022-08-28</lastmod>
+    <loc>https://largefan.github.io/categories/Git/</loc>
+    <lastmod>2022-08-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://largefan.github.io/categories/%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2022-08-28</lastmod>
+    <lastmod>2022-08-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://largefan.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
+    <lastmod>2022-08-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://largefan.github.io/categories/%E9%9D%A2%E8%AF%95/</loc>
-    <lastmod>2022-08-28</lastmod>
+    <lastmod>2022-08-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
