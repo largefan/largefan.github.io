@@ -179,14 +179,14 @@
   </url>
   
   <url>
-    <loc>https://largefan.github.io/tags/Git/</loc>
+    <loc>https://largefan.github.io/tags/Gitee/</loc>
     <lastmod>2022-08-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://largefan.github.io/tags/Gitee/</loc>
+    <loc>https://largefan.github.io/tags/Git/</loc>
     <lastmod>2022-08-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -200,13 +200,6 @@
   </url>
   
   <url>
-    <loc>https://largefan.github.io/tags/hexo/</loc>
-    <lastmod>2022-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://largefan.github.io/tags/Github/</loc>
     <lastmod>2022-08-30</lastmod>
     <changefreq>daily</changefreq>
@@ -214,7 +207,7 @@
   </url>
   
   <url>
-    <loc>https://largefan.github.io/tags/markdown/</loc>
+    <loc>https://largefan.github.io/tags/hexo/</loc>
     <lastmod>2022-08-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -222,6 +215,13 @@
   
   <url>
     <loc>https://largefan.github.io/tags/%E9%9D%A2%E8%AF%95/</loc>
+    <lastmod>2022-08-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://largefan.github.io/tags/markdown/</loc>
     <lastmod>2022-08-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
