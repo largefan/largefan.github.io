@@ -4,6 +4,131 @@
   
     
     <entry>
+      <title>github上手</title>
+      <link href="/posts/10.html"/>
+      <url>/posts/10.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="一、上手github"><a href="#一、上手github" class="headerlink" title="一、上手github"></a>一、上手github</h3><p><strong>1. <font color="red">git clone 远程库链接</font> ，把文件克隆下来。</strong></p><p><strong>2.创建分支，把代码文件复制进克隆文件夹，然后<font color="red">add和commit</font>，然后合并分支，然后可以把旧分支删除。</strong></p><p><strong>3.<font color="red">git push 别名（远程地址） 分支</font>，然后会弹出验证授权，确认后则上传github成功。</strong></p><p><strong>4.如代码更新了，则用 <font color="red">git pull 远程库地址别名 远程分支名</font>，即可更新工作区代码。</strong></p><h2 id="二、遇到都问题总结："><a href="#二、遇到都问题总结：" class="headerlink" title="二、遇到都问题总结："></a>二、遇到都问题总结：</h2><p><strong>1.解决 git clone 无法获取本地颁发者证书 问题</strong>：</p><p>解决方法：输入命令即可：git config –global http.sslVerify false</p><hr><p><strong>2. 不要把代码文件里的 .git 复制进 git clone 克隆文件夹里面！只需创建分支，把代码文件提交进本地库，然后提交远程库。</strong></p><hr><p><strong>3.git pull（当远程仓库有更新，可用pull进行更新，但它会直接更新到工作区把旧的文件覆盖掉！所以我们用fetch更新到本地仓库 再用 diff对比区别 ，没问题在合并过来。）</strong></p><hr><p><strong>4. git remote -v</strong></p><blockquote><p>这个命令可以简化操作：</p><blockquote><p>例：push的时候 <strong>远程库链接</strong> 可以换成 <strong>origin</strong> 来代替URL</p></blockquote></blockquote><hr><p><strong>5.新手在github上一般点击 Download ZIP 下载文件,此方法只会下载当前最新版本的文件，其中的版本历史和记录不会下载，也就是说压缩文件里面没有.git文件夹！</strong></p><hr><p><strong>6.分支不明确导致的问题：</strong></p><p><img src="https://s1.imagehub.cc/images/2022/08/30/c0ee7b83fdce344ea168916978166d15.png" alt="分支不明确导致的问题"></p><hr><p><strong>7.再次说明！！！！！</strong></p><p><strong>如果你想要把代码添加到github，就必须上github把仓库下载下来，在把写好代码拉进来即可。</strong></p><p><strong>一、在github上创建仓库，然后在桌面创建文件夹右键打开Bash，然后git clone 仓库地址 把文件下载下来。</strong></p><p><strong>二、把写好的文件代码 复制拉进来 然后执行常用命令①②③④ 就可以把代码添加到github上了</strong></p><p><strong>三、如果你在github上修改了代码 则执行⑤命令 把github上的代码 更新 到本地了</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Git实操</title>
+      <link href="/posts/9.html"/>
+      <url>/posts/9.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="①git-init："><a href="#①git-init：" class="headerlink" title="①git init："></a>①git init：</h2><p><img src="https://s1.imagehub.cc/images/2022/08/30/Git1.png" alt="Git实操1"></p><p><img src="https://s1.imagehub.cc/images/2022/08/30/Git2.png" alt="Git实操2"></p><h2 id="拓展1：git-status："><a href="#拓展1：git-status：" class="headerlink" title="拓展1：git status："></a>拓展1：git status：</h2><blockquote><p><strong>第一次</strong>查看状态，提示：工作区没有任何文件</p></blockquote><p><img src="https://s1.imagehub.cc/images/2022/08/30/Git3.png" alt="Git实操3"></p><h2 id="拓展2：（用vim）：新增txt文件："><a href="#拓展2：（用vim）：新增txt文件：" class="headerlink" title="拓展2：（用vim）：新增txt文件："></a>拓展2：（用vim）：新增txt文件：</h2><p><strong>1.输入：Vim lzb.txt</strong></p><p><strong>2.输入内容：aaa bbb ccc</strong></p><p><img src="https://s1.imagehub.cc/images/2022/08/30/Git4.png" alt="Git实操4"></p><p><strong>3.按esc键</strong></p><p><strong>4.按SHIFT + : 然后wq保存</strong></p><p><img src="https://s1.imagehub.cc/images/2022/08/30/Git5.png" alt="Git实操5"></p><p><strong>5.回车即成功创建lzb.txt</strong></p><p><img src="https://s1.imagehub.cc/images/2022/08/30/Git6.png" alt="Git实操6"></p><h2 id="拓展3："><a href="#拓展3：" class="headerlink" title="拓展3："></a><strong>拓展3：</strong></h2><blockquote><p><strong>第二次</strong>查看状态，提示： 检测到未追踪的文件（即还未git add）</p></blockquote><p><strong>git status</strong></p><p><img src="https://s1.imagehub.cc/images/2022/08/30/Git7.png" alt="Git实操7"></p><h2 id="②添加暂存区：git-add-lzb-txt"><a href="#②添加暂存区：git-add-lzb-txt" class="headerlink" title="②添加暂存区：git add lzb.txt"></a>②添加暂存区：git add lzb.txt</h2><p><strong>git add lzb.txt</strong></p><p><img src="https://s1.imagehub.cc/images/2022/08/30/Git8.png" alt="Git实操8"></p><blockquote><p><strong>第三次</strong>查看状态，提示：检测到暂存区有新文件<strong>（</strong>即还未<strong>③git commit -m “日志信息” 文件名</strong>）</p></blockquote><p><img src="https://s1.imagehub.cc/images/2022/08/30/Git9.png" alt="Git实操9"></p><h2 id="③提交本地库：-文件名不写则全部提交"><a href="#③提交本地库：-文件名不写则全部提交" class="headerlink" title="③提交本地库：(文件名不写则全部提交)"></a>③提交本地库：(文件名不写则全部提交)</h2><p><strong>git commit -m “日志信息” 文件名</strong></p><blockquote><p>此时<strong>第四次</strong>查看状态，提示：没有文件需要提交了</p></blockquote><p><img src="https://s1.imagehub.cc/images/2022/08/30/Git10.png" alt="Git实操10"></p><h2 id="拓展4（用vim）：修改文件-lzb-txt"><a href="#拓展4（用vim）：修改文件-lzb-txt" class="headerlink" title="拓展4（用vim）：修改文件 lzb.txt"></a>拓展4（用vim）：修改文件 lzb.txt</h2><p><strong>1.输入：$ vim lzb.txt</strong></p><p><strong>2.按 i 键才能修改。</strong></p><p><strong>3.输入以下内容：</strong></p><p><img src="https://s1.imagehub.cc/images/2022/08/30/Git11.png" alt="Git实操11"></p><p><strong>4.按esc</strong></p><p><strong>5.按SHIFT + ：</strong></p><p><strong>6.wq</strong></p><p><strong>7.回车即修改成功。</strong></p><h2 id="拓展5："><a href="#拓展5：" class="headerlink" title="拓展5："></a>拓展5：</h2><blockquote><p>查看状态,提示：检测到工作区有文件被修改！</p></blockquote><p><img src="https://s1.imagehub.cc/images/2022/08/30/Git12.png" alt="Git实操12"></p><blockquote><p>然后需要我们 重新 添加暂存区 和 提交本地库 !</p><blockquote><p>小技巧：把 add 和 commit 合在一起写，这样就可以从 工作区 跳到 本地版本库 了!</p><blockquote><p>从下图，查看状态可看出已经没有文件需要提交了！</p></blockquote></blockquote></blockquote><p><img src="https://s1.imagehub.cc/images/2022/08/30/Git13.png" alt="Git实操13"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Git的常用命令</title>
+      <link href="/posts/8.html"/>
+      <url>/posts/8.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、Git的常用命令"><a href="#一、Git的常用命令" class="headerlink" title="一、Git的常用命令"></a>一、Git的常用命令</h2><table><thead><tr><th align="center"><strong>命令名称</strong></th><th align="center"><strong>作用</strong></th></tr></thead><tbody><tr><td align="center"><strong>git config –global user.name 用户名</strong></td><td align="center"><strong>设置用户签名</strong></td></tr><tr><td align="center"><strong>git config –global user.email 邮箱</strong></td><td align="center"><strong>设置用户签名</strong></td></tr><tr><td align="center"></td><td align="center"></td></tr><tr><td align="center"><strong>①git init</strong></td><td align="center"><strong>初始化本地库</strong></td></tr><tr><td align="center"><strong>git status</strong></td><td align="center"><strong>查看本地库状态</strong></td></tr><tr><td align="center"><strong>②git add 文件名  git add . 意思是把所有文件添加到暂存区</strong></td><td align="center"><strong>添加到暂存区</strong></td></tr><tr><td align="center"><strong>③git commit -m “日志信息” 文件名</strong></td><td align="center"><strong>提交到本地库</strong></td></tr><tr><td align="center"><strong>④git push 别名（远程地址） 分支</strong></td><td align="center"><strong>本地库提交到 github</strong></td></tr><tr><td align="center"></td><td align="center"></td></tr><tr><td align="center"><strong>⑤当  GitHub 平台修改了代码 则可用    git pull  更新到本地库</strong></td><td align="center"><strong>即会覆盖本地库代码！</strong></td></tr><tr><td align="center"></td><td align="center"></td></tr><tr><td align="center"></td><td align="center"></td></tr><tr><td align="center"><strong>版本控制</strong></td><td align="center"><strong>作用</strong></td></tr><tr><td align="center"><strong>git reflog</strong></td><td align="center"><strong>查看版本信息</strong></td></tr><tr><td align="center"><strong>git log</strong></td><td align="center"><strong>查看版本详细信息</strong></td></tr><tr><td align="center"><strong>git reset –hard 版本号</strong></td><td align="center"><strong>版本切换</strong></td></tr><tr><td align="center"><strong>cat lzb.txt(文件名)</strong></td><td align="center"><strong>查看版本内容</strong></td></tr></tbody></table><blockquote><p>注意：</p><blockquote><ol><li>签名的作用是区分不同操作者身份。用户的签名信息在每一个版本的提交信息中能够看到，以此确认本次提交是谁做的。Git 首次安装必须设置一下用户签名，否则无法提交代码。</li></ol><ol start="2"><li>这里设置用户签名和将来登录<strong>GitHub</strong>（或其他代码托管中心）的账号没有<strong>任何关系！</strong></li></ol></blockquote></blockquote><h2 id="二、分支命令"><a href="#二、分支命令" class="headerlink" title="二、分支命令"></a>二、分支命令</h2><table><thead><tr><th align="center">命令名称</th><th align="center">作用</th></tr></thead><tbody><tr><td align="center"><strong>git branch 分支名</strong></td><td align="center"><strong>创建分支</strong></td></tr><tr><td align="center"><strong>git branch -v</strong></td><td align="center"><strong>查看分支</strong></td></tr><tr><td align="center"><strong>git checkout 分支名</strong></td><td align="center"><strong>切换分支</strong></td></tr><tr><td align="center"><strong>git merge 分支名</strong></td><td align="center"><strong>把指定的分支合并到当前分支上</strong></td></tr><tr><td align="center"></td><td align="center"></td></tr><tr><td align="center"><strong>git branch -d</strong> <strong>分支名</strong></td><td align="center"><strong>删除分支（非常确定要删除，则该分支用大写 -D）</strong></td></tr><tr><td align="center"><strong>git checkout -b</strong> <strong>要创建的分支名</strong></td><td align="center"><strong>创建分支并马上切换到新分支</strong></td></tr></tbody></table><h2 id="三、-gitignore—文件解说"><a href="#三、-gitignore—文件解说" class="headerlink" title="三、.gitignore—文件解说"></a>三、.gitignore—文件解说</h2><table><thead><tr><th align="center"><strong>命令</strong></th><th align="center"><strong>作用</strong></th></tr></thead><tbody><tr><td align="center"><strong>touch .gitignore</strong></td><td align="center"><strong>处理在实际开发中不需要提交的文件</strong></td></tr></tbody></table><blockquote><ol><li><p>在.gitignore里面写入图片名字，即可让git不在追踪此图片。</p><blockquote><ol start="2"><li>查看是否成功命令：git status(未提示图片名字则成功，反之失败)</li></ol></blockquote></li></ol></blockquote><h2 id="四、GitHub命令操作"><a href="#四、GitHub命令操作" class="headerlink" title="四、GitHub命令操作"></a>四、GitHub命令操作</h2><table><thead><tr><th align="center"><strong>命令</strong></th><th align="center"><strong>作用</strong></th></tr></thead><tbody><tr><td align="center"><strong>git clone 链接(远程地址 )</strong></td><td align="center"><strong>将远程仓库的内容克隆到本地</strong></td></tr><tr><td align="center"><strong>git remote -v</strong></td><td align="center"><strong>查看本地仓库和远程仓库有哪些联系</strong></td></tr><tr><td align="center"><strong>git remote add 别名 远程地址</strong></td><td align="center"><strong>起别名</strong></td></tr><tr><td align="center"><strong>git push 别名 分支</strong></td><td align="center"><strong>推送本地分支上的内容到远程仓库</strong></td></tr><tr><td align="center"><strong>git  fetch</strong></td><td align="center"><strong>与diff配合更新本地，不会改变工作区，因为它是添加到本地仓库。</strong></td></tr><tr><td align="center"><strong>git diff 远程仓库名/分支名</strong></td><td align="center"><strong>此符号 /   照写。用于查看 远程仓库和分支的区别。</strong></td></tr><tr><td align="center"><strong>git pull 远程库地址别名  远程分支名</strong></td><td align="center"><strong>如果远程仓库和分支没问题，则用pull添加到工作区，如不使用fetch和diff命令，直接pull则会直接覆盖掉工作区。</strong></td></tr></tbody></table><h2 id="五、vim–命令"><a href="#五、vim–命令" class="headerlink" title="五、vim–命令"></a>五、vim–命令</h2><pre class="line-numbers language-none"><code class="language-none">1.新增（或修改）txt文件：$ Vim lzb.txt2.esc退出编辑状态；yy复制p粘贴3.按SHIFT + : 然后wq保存4.按 i 键才能修改5.查看文件：cat 文件名（即lzb.txt）<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Git分支与版本控制</title>
+      <link href="/posts/7.html"/>
+      <url>/posts/7.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、分支是什么？"><a href="#一、分支是什么？" class="headerlink" title="一、分支是什么？"></a>一、分支是什么？</h2><ul><li>分支可以简单理解为副本，一个分支就是一个单独的副本。（即在副本上操作，不动原文件）优点：<ol><li>同时并行推进多个功能开发，提高开发效率。</li><li>各个分支在开发过程中，如果某一个分支开发失败，不会对其他分支有任何影响。失败的分支删除重新开始即可。</li></ol></li></ul><h2 id="二、分支-命令操作"><a href="#二、分支-命令操作" class="headerlink" title="二、分支-命令操作"></a>二、分支-命令操作</h2><ol><li><p>创建分支：<strong>git branch 分支名</strong></p></li><li><p>查看分支：<strong>git branch -v</strong></p></li><li><p>切换分支：<strong>git checkout 分支名**</strong></p><p>*表示当前所在的分区</p></li></ol><ol start="4"><li><p>修改分支里的文件，需要重新添加暂存区和提交本地库。</p><p><img src="https://s1.imagehub.cc/images/2022/08/30/git1.png" alt="Git分支1"></p><p><img src="https://s1.imagehub.cc/images/2022/08/30/git2.png" alt="Git分支2"></p></li></ol><h2 id="三、注意：不要把历史版本和分支搞混淆了"><a href="#三、注意：不要把历史版本和分支搞混淆了" class="headerlink" title="三、注意：不要把历史版本和分支搞混淆了"></a>三、注意：不要把历史版本和分支搞混淆了</h2><h2 id="四、版本控制"><a href="#四、版本控制" class="headerlink" title="四、版本控制"></a>四、版本控制</h2><ul><li>命令如下：<ol><li><strong>git reflog：查看版本信息</strong><ol start="2"><li><strong>git log：查看版本详细信息</strong></li></ol></li></ol></li></ul><p><img src="https://s1.imagehub.cc/images/2022/08/30/git112457d6ce771fce1.png" alt="git版本控制命令1"></p><ol start="3"><li><p><strong>切换版本：</strong>    <strong>git reset –hard 版本号</strong></p></li><li><p><strong>查看版本内容：</strong>    **cat lzb.txt(文件名) **</p></li></ol><p><img src="https://s1.imagehub.cc/images/2022/08/30/git276f0a911fb27de0a.png" alt="git版本控制命令2"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Git概述</title>
+      <link href="/posts/6.html"/>
+      <url>/posts/6.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、Git是什么？"><a href="#一、Git是什么？" class="headerlink" title="一、Git是什么？"></a>一、Git是什么？</h2><ol><li><p>Git 是一个免费的、开源的<strong>分布式</strong>版本控制系统，可以快速高效地处理从小型到大型的各种项目。</p></li><li><p>Git 易于学习，占地面积小，性能极快。 它具有廉价的本地库，方便的暂存区域和多个工作流分支等特性。其性能优于 Subversion、CVS、Perforce 和 ClearCase 等版本控制工具。</p></li></ol><h2 id="二、什么是版本控制？"><a href="#二、什么是版本控制？" class="headerlink" title="二、什么是版本控制？"></a>二、什么是版本控制？</h2><ol><li>版本控制是一种记录文件内容变化，以便将来查阅特定版本修订情况的系统。</li><li>版本控制其实最重要的是可以记录文件修改历史记录，从而让用户能够查看历史版本，方便版本切换。</li><li></li></ol><h2 id="三、版本控制分类："><a href="#三、版本控制分类：" class="headerlink" title="三、版本控制分类："></a>三、版本控制分类：</h2><ul><li><p><strong>集中式版本控制工具</strong>：CVS、SVN(Subversion)、VSS……</p><ol><li>优点：可以看到项目中的其他人在做些什么，管理员也可掌控每个开发者的权限，比在各个客户端上维护本地数据库来得轻松容易。</li><li>缺点：服务器坏了一天，那么这一天谁都无法提交更新。</li></ol></li><li><p><strong>分布式版本控制工具：Git</strong>、Mercurial、Bazaar、Darcs……</p><ol><li>分布式的版本控制系统出现之后,解决了集中式版本控制系统的缺陷</li><li>服务器断网的情况下也可以进行开发（因为版本控制是在本地进行的）</li><li>每个客户端保存的也都是整个完整的项目（包含历史记录，更加安全）</li></ol></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>前端面试题</title>
       <link href="/posts/100.html"/>
       <url>/posts/100.html</url>
@@ -33,7 +158,7 @@
       <link href="/posts/5.html"/>
       <url>/posts/5.html</url>
       
-        <content type="html"><![CDATA[<h2 id="一、什么是HTTP？"><a href="#一、什么是HTTP？" class="headerlink" title="一、什么是HTTP？"></a>一、什么是HTTP？</h2><p>HTTP（hypertext transport protocol）协议『超文本传输协议』，协议详细规定了浏览器和万维网服务器之间互相通信的规则。即约定, 规则。</p><h2 id="二、请求报文（request）："><a href="#二、请求报文（request）：" class="headerlink" title="二、请求报文（request）："></a>二、请求报文（request）：</h2><pre class="line-numbers language-none"><code class="language-none">行包括三部分：1.请求类型：POST  2.url的路径（写查询字符串、路径）：/s?ie=utf-8  3.（http协议版本）：HTTP/1.1 头格式为:名字:空格值  Host: baidu.com   Cookie: name=baidu      Content-type: application/x-www-form-urlencoded User-Agent: chrome 83空行体如果是：get请求：请求体为空post请求：请求体不为空 username=admin&amp;password=admin<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="三、响应报文（response）"><a href="#三、响应报文（response）" class="headerlink" title="三、响应报文（response）:"></a>三、响应报文（response）:</h2><pre class="line-numbers language-none"><code class="language-none">行1.（http协议版本）：HTTP/1.1         2.(响应状态码)：200           3.(响应状态字符串):OK头Content-Type: text/html;charset=utf-8 Content-length: 2048 Content-encoding: gzip空行体返回结果<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><blockquote><p>响应状态码：</p><blockquote><p>200 - 请求成功，已经正常处理完毕</p><p>301 - 请求永久重定向，转移到其它URL</p><p>302 - 请求临时重定向</p><p>304 - 请求被重定向到客户端本地缓存</p><p>400 - 客户端请求存在语法错误</p><p>401 - 客户端请求没有经过授权</p><p>403 - 客户端的请求被服务器拒绝，一般为客户端没有访问权限</p><p>404 - 客户端请求的URL在服务端不存在</p><p>500 - 服务端永久错误</p></blockquote></blockquote><h2 id="四、GET响应体控制台查看位置："><a href="#四、GET响应体控制台查看位置：" class="headerlink" title="四、GET响应体控制台查看位置："></a>四、GET响应体控制台查看位置：</h2><p><img src="https://s1.imagehub.cc/images/2022/08/29/get.jpg" alt="GET响应体控制台查看位置"></p><h2 id="五、注意：get没有请求体！"><a href="#五、注意：get没有请求体！" class="headerlink" title="五、注意：get没有请求体！"></a>五、注意：get没有请求体！</h2><p><img src="https://s1.imagehub.cc/images/2022/08/29/get46107bd3496f34a0.jpg" alt="get没有请求体"></p><h2 id="六、post请求体控制台查看位置："><a href="#六、post请求体控制台查看位置：" class="headerlink" title="六、post请求体控制台查看位置："></a>六、post请求体控制台查看位置：</h2><p><img src="https://s1.imagehub.cc/images/2022/08/29/post.jpg" alt="post请求体控制台查看位置"></p>]]></content>
+        <content type="html"><![CDATA[<h2 id="一、什么是HTTP？"><a href="#一、什么是HTTP？" class="headerlink" title="一、什么是HTTP？"></a>一、什么是HTTP？</h2><p>HTTP（hypertext transport protocol）协议『超文本传输协议』，协议详细规定了浏览器和万维网服务器之间互相通信的规则。即约定, 规则。</p><h2 id="二、请求报文（request）："><a href="#二、请求报文（request）：" class="headerlink" title="二、请求报文（request）："></a>二、请求报文（request）：</h2><pre class="line-numbers language-none"><code class="language-none">行包括三部分：1.请求类型：POST  2.url的路径（写查询字符串、路径）：/s?ie=utf-8  3.（http协议版本）：HTTP/1.1 头格式为:名字:空格值  Host: baidu.com                 Cookie: name=baidu  Content-type: application/x-www-form-urlencoded User-Agent: chrome 83空行体如果是：get请求：请求体为空post请求：请求体不为空 username=admin&amp;password=admin<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="三、响应报文（response）"><a href="#三、响应报文（response）" class="headerlink" title="三、响应报文（response）:"></a>三、响应报文（response）:</h2><pre class="line-numbers language-none"><code class="language-none">行1.（http协议版本）：HTTP/1.1            2.(响应状态码)：200            3.(响应状态字符串):OK头Content-Type: text/html;charset=utf-8 Content-length: 2048 Content-encoding: gzip空行体返回结果<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><blockquote><p>响应状态码：</p><blockquote><p>200 - 请求成功，已经正常处理完毕</p><p>301 - 请求永久重定向，转移到其它URL</p><p>302 - 请求临时重定向</p><p>304 - 请求被重定向到客户端本地缓存</p><p>400 - 客户端请求存在语法错误</p><p>401 - 客户端请求没有经过授权</p><p>403 - 客户端的请求被服务器拒绝，一般为客户端没有访问权限</p><p>404 - 客户端请求的URL在服务端不存在</p><p>500 - 服务端永久错误</p></blockquote></blockquote><h2 id="四、GET响应体控制台查看位置："><a href="#四、GET响应体控制台查看位置：" class="headerlink" title="四、GET响应体控制台查看位置："></a>四、GET响应体控制台查看位置：</h2><p><img src="https://s1.imagehub.cc/images/2022/08/29/get.jpg" alt="GET响应体控制台查看位置"></p><h2 id="五、注意：get没有请求体！"><a href="#五、注意：get没有请求体！" class="headerlink" title="五、注意：get没有请求体！"></a>五、注意：get没有请求体！</h2><p><img src="https://s1.imagehub.cc/images/2022/08/29/get46107bd3496f34a0.jpg" alt="get没有请求体"></p><h2 id="六、post请求体控制台查看位置："><a href="#六、post请求体控制台查看位置：" class="headerlink" title="六、post请求体控制台查看位置："></a>六、post请求体控制台查看位置：</h2><p><img src="https://s1.imagehub.cc/images/2022/08/29/post.jpg" alt="post请求体控制台查看位置"></p>]]></content>
       
       
       <categories>
