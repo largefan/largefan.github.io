@@ -13,14 +13,14 @@
       
       <categories>
           
-          <category> 笔记 </category>
+          <category> Git </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Git </tag>
+            <tag> 笔记 </tag>
             
         </tags>
       
@@ -38,14 +38,14 @@
       
       <categories>
           
-          <category> 笔记 </category>
+          <category> Git </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Git </tag>
+            <tag> 笔记 </tag>
             
         </tags>
       
@@ -63,14 +63,14 @@
       
       <categories>
           
-          <category> 笔记 </category>
+          <category> Git </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Git </tag>
+            <tag> 笔记 </tag>
             
         </tags>
       
@@ -88,14 +88,14 @@
       
       <categories>
           
-          <category> 笔记 </category>
+          <category> Git </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Git </tag>
+            <tag> 笔记 </tag>
             
         </tags>
       
@@ -113,14 +113,14 @@
       
       <categories>
           
-          <category> 笔记 </category>
+          <category> Git </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Git </tag>
+            <tag> 笔记 </tag>
             
         </tags>
       
@@ -233,7 +233,7 @@
       <link href="/posts/2.html"/>
       <url>/posts/2.html</url>
       
-        <content type="html"><![CDATA[<h2 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h2><pre class="line-numbers language-none"><code class="language-none">标题：（注意#后面要加一个空格！）# 一级标题## 二级标题### 三级标题#### 四级标题##### 五级标题###### 六级标题<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="二、字体"><a href="#二、字体" class="headerlink" title="二、字体"></a>二、字体</h2><pre class="line-numbers language-none"><code class="language-none">斜体字、粗体字、删除内容、短文字：*斜体字***粗体字*****斜体加粗体***~~删除的内容~~ （1.效果看下面）_下划线_ （2.）`短文字` （3.会有灰色背景）<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>1.<del>我是删除的内容</del></p><p>2.<em>我是下划线</em></p><p>3.<code>短文字</code></p><h2 id="三、注释"><a href="#三、注释" class="headerlink" title="三、注释"></a>三、注释</h2><pre class="line-numbers language-none"><code class="language-none">添加注释：（可不加空格）&gt;注释标题&gt;添加引用内容&gt;&gt;多级注释<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><blockquote><p>我是标题</p><blockquote><p>我是注释内容</p><blockquote><blockquote><p>我是多级注释</p></blockquote></blockquote></blockquote></blockquote><h2 id="四、列表"><a href="#四、列表" class="headerlink" title="四、列表"></a>四、列表</h2><pre class="line-numbers language-none"><code class="language-none">无序列表：（必加空格）* 无序列表1* 无序列表2* 无序列表2.1（这里按tab键，使层级更加清晰）* 无序列表2.2（这里按tab键，使层级更加清晰）有序列表：（1.然后空格）1. 有序列表12. 有序列表2<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="无序："><a href="#无序：" class="headerlink" title="无序："></a>无序：</h3><ul><li>我是无序列表1</li><li>我是无序列表2<ul><li>我是无序列表2.1</li><li>我是无序列表2.2</li></ul></li></ul><h3 id="有序："><a href="#有序：" class="headerlink" title="有序："></a>有序：</h3><ol><li><p>我是有序列表1</p></li><li><p> 我是有序列表2</p></li></ol><h2 id="五、复选框"><a href="#五、复选框" class="headerlink" title="五、复选框"></a>五、复选框</h2><pre class="line-numbers language-none"><code class="language-none">复选框：(-然后空格，然后在中括号里面加一个空格，在到外面加空格)- [] 待办事项1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><ul><li><input disabled="" type="checkbox"> </li></ul><h2 id="六、分割线"><a href="#六、分割线" class="headerlink" title="六、分割线"></a>六、分割线</h2><pre class="line-numbers language-none"><code class="language-none">分割线：***或者___ (三个下划线)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><hr><hr><h2 id="七、插入代码"><a href="#七、插入代码" class="headerlink" title="七、插入代码"></a>七、插入代码</h2><pre class="line-numbers language-none"><code class="language-none">插入代码：(三个漂号 或 加上语言类型)```或```javascript<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><pre class="line-numbers language-none"><code class="language-none"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h2 id="八、插入图片"><a href="#八、插入图片" class="headerlink" title="八、插入图片"></a>八、插入图片</h2><pre class="line-numbers language-none"><code class="language-none">图片：方式一： 直接拖进来(图片是存在本地的，别人看你文档是看不到你图片的！)方式二： ![图片名称](图片地址url)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p><img src="https://s1.imagehub.cc/images/2022/08/27/-4k3840x2160_.jpg" alt="-4k3840x2160_.jpg"></p><h2 id="九、插入网页链接"><a href="#九、插入网页链接" class="headerlink" title="九、插入网页链接"></a>九、插入网页链接</h2><pre class="line-numbers language-none"><code class="language-none">网页链接：先在[]中输入名字,再到括号中输入网址。[链接某个网页]()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p><a href="https://largefan.github.io/">大风扇的博客</a></p><h2 id="十、表格-麻烦，直接右键创建就好了"><a href="#十、表格-麻烦，直接右键创建就好了" class="headerlink" title="十、表格(麻烦，直接右键创建就好了)"></a>十、表格(<font color="red">麻烦，直接右键创建就好了</font>)</h2><pre class="line-numbers language-html" data-language="html"><code class="language-html">表格：标题|标题|标题:--:|:--|--:第一个格子|第二个格子|第三个格子第一个内容|第二个内容|第三个内容<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><table><thead><tr><th align="center">标题</th><th align="left">标题</th><th align="right">标题</th></tr></thead><tbody><tr><td align="center">第一个格子</td><td align="left">第二个格子</td><td align="right">第三个格子</td></tr><tr><td align="center">第一个内容</td><td align="left">第二个内容</td><td align="right">第三个内容</td></tr></tbody></table><h2 id="十一、公式"><a href="#十一、公式" class="headerlink" title="十一、公式"></a>十一、公式</h2><pre class="line-numbers language-none"><code class="language-none">公式：$$这里写公式$$<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>$$<br>2^3+C_2^2=猜一猜？<br>$$</p><h2 id="十二、目录"><a href="#十二、目录" class="headerlink" title="十二、目录"></a>十二、目录</h2><pre class="line-numbers language-none"><code class="language-none">目录：[TOC]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>[TOC]</p>]]></content>
+        <content type="html"><![CDATA[<h2 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h2><pre class="line-numbers language-none"><code class="language-none">标题：（注意#后面要加一个空格！）# 一级标题## 二级标题### 三级标题#### 四级标题##### 五级标题###### 六级标题<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="二、字体"><a href="#二、字体" class="headerlink" title="二、字体"></a>二、字体</h2><pre class="line-numbers language-none"><code class="language-none">斜体字、粗体字、删除内容、短文字：*斜体字***粗体字*****斜体加粗体***~~删除的内容~~ （1.效果看下面）_下划线_ （2.）`短文字` （3.会有灰色背景） &lt;font color=red&gt;字体颜色代码&lt;/font&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>1.<del>我是删除的内容</del></p><p>2.<em>我是下划线</em></p><p>3.<code>短文字</code></p><p><font color="red">字体颜色代码</font></p><h2 id="三、注释"><a href="#三、注释" class="headerlink" title="三、注释"></a>三、注释</h2><pre class="line-numbers language-none"><code class="language-none">添加注释：（可不加空格）&gt;注释标题&gt;添加引用内容&gt;&gt;多级注释<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><blockquote><p>我是标题</p><blockquote><p>我是注释内容</p><blockquote><blockquote><p>我是多级注释</p></blockquote></blockquote></blockquote></blockquote><h2 id="四、列表"><a href="#四、列表" class="headerlink" title="四、列表"></a>四、列表</h2><pre class="line-numbers language-none"><code class="language-none">无序列表：（必加空格）* 无序列表1* 无序列表2* 无序列表2.1（这里按tab键，使层级更加清晰）* 无序列表2.2（这里按tab键，使层级更加清晰）有序列表：（1.然后空格）1. 有序列表12. 有序列表2<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="无序："><a href="#无序：" class="headerlink" title="无序："></a>无序：</h3><ul><li>我是无序列表1</li><li>我是无序列表2<ul><li>我是无序列表2.1</li><li>我是无序列表2.2</li></ul></li></ul><h3 id="有序："><a href="#有序：" class="headerlink" title="有序："></a>有序：</h3><ol><li><p>我是有序列表1</p></li><li><p> 我是有序列表2</p></li></ol><h2 id="五、复选框"><a href="#五、复选框" class="headerlink" title="五、复选框"></a>五、复选框</h2><pre class="line-numbers language-none"><code class="language-none">复选框：(-然后空格，然后在中括号里面加一个空格，在到外面加空格)- [] 待办事项1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><ul><li><input disabled="" type="checkbox"> </li></ul><h2 id="六、分割线"><a href="#六、分割线" class="headerlink" title="六、分割线"></a>六、分割线</h2><pre class="line-numbers language-none"><code class="language-none">分割线：***或者___ (三个下划线)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><hr><hr><h2 id="七、插入代码"><a href="#七、插入代码" class="headerlink" title="七、插入代码"></a>七、插入代码</h2><pre class="line-numbers language-none"><code class="language-none">插入代码：(三个漂号 或 加上语言类型)```或```javascript<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><pre class="line-numbers language-none"><code class="language-none"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h2 id="八、插入图片"><a href="#八、插入图片" class="headerlink" title="八、插入图片"></a>八、插入图片</h2><pre class="line-numbers language-none"><code class="language-none">图片：方式一： 直接拖进来(图片是存在本地的，别人看你文档是看不到你图片的！)方式二： ![图片名称](图片地址url)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p><img src="https://s1.imagehub.cc/images/2022/08/27/-4k3840x2160_.jpg" alt="-4k3840x2160_.jpg"></p><h2 id="九、插入网页链接"><a href="#九、插入网页链接" class="headerlink" title="九、插入网页链接"></a>九、插入网页链接</h2><pre class="line-numbers language-none"><code class="language-none">网页链接：先在[]中输入名字,再到括号中输入网址。[链接某个网页]()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p><a href="https://largefan.github.io/">大风扇的博客</a></p><h2 id="十、表格-麻烦，直接右键创建就好了"><a href="#十、表格-麻烦，直接右键创建就好了" class="headerlink" title="十、表格(麻烦，直接右键创建就好了)"></a>十、表格(<font color="red">麻烦，直接右键创建就好了</font>)</h2><pre class="line-numbers language-html" data-language="html"><code class="language-html">表格：标题|标题|标题:--:|:--|--:第一个格子|第二个格子|第三个格子第一个内容|第二个内容|第三个内容<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><table><thead><tr><th align="center">标题</th><th align="left">标题</th><th align="right">标题</th></tr></thead><tbody><tr><td align="center">第一个格子</td><td align="left">第二个格子</td><td align="right">第三个格子</td></tr><tr><td align="center">第一个内容</td><td align="left">第二个内容</td><td align="right">第三个内容</td></tr></tbody></table><h2 id="十一、公式"><a href="#十一、公式" class="headerlink" title="十一、公式"></a>十一、公式</h2><pre class="line-numbers language-none"><code class="language-none">公式：$$这里写公式$$<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>$$<br>2^3+C_2^2=猜一猜？<br>$$</p><h2 id="十二、目录"><a href="#十二、目录" class="headerlink" title="十二、目录"></a>十二、目录</h2><pre class="line-numbers language-none"><code class="language-none">目录：[TOC]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>[TOC]</p>]]></content>
       
       
       <categories>
