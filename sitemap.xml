@@ -37,6 +37,13 @@
   </url>
   
   <url>
+    <loc>https://largefan.github.io/artitalk/ES6%E7%AE%80%E4%BB%8B.html</loc>
+    
+    <lastmod>2022-09-12</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://largefan.github.io/posts/11.html</loc>
     
     <lastmod>2022-09-12</lastmod>
@@ -214,14 +221,21 @@
 
   
   <url>
-    <loc>https://largefan.github.io/tags/ES6/</loc>
+    <loc>https://largefan.github.io/tags/Ajax/</loc>
     <lastmod>2022-09-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://largefan.github.io/tags/Ajax/</loc>
+    <loc>https://largefan.github.io/tags/Node/</loc>
+    <lastmod>2022-09-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://largefan.github.io/tags/ES6/</loc>
     <lastmod>2022-09-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -242,14 +256,14 @@
   </url>
   
   <url>
-    <loc>https://largefan.github.io/tags/Node/</loc>
+    <loc>https://largefan.github.io/tags/HTTP/</loc>
     <lastmod>2022-09-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://largefan.github.io/tags/HTTP/</loc>
+    <loc>https://largefan.github.io/tags/hexo/</loc>
     <lastmod>2022-09-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -270,7 +284,7 @@
   </url>
   
   <url>
-    <loc>https://largefan.github.io/tags/hexo/</loc>
+    <loc>https://largefan.github.io/tags/%E9%9D%A2%E8%AF%95/</loc>
     <lastmod>2022-09-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -278,13 +292,6 @@
   
   <url>
     <loc>https://largefan.github.io/tags/MySQL/</loc>
-    <lastmod>2022-09-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://largefan.github.io/tags/%E9%9D%A2%E8%AF%95/</loc>
     <lastmod>2022-09-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
