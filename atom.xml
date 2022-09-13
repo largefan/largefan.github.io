@@ -41,6 +41,30 @@
   </entry>
   
   <entry>
+    <title>前后端的身份认证--JWT认证机制原理</title>
+    <link href="https://largefan.github.io/posts/17.html"/>
+    <id>https://largefan.github.io/posts/17.html</id>
+    <published>2022-06-29T06:30:00.000Z</published>
+    <updated>2022-09-13T08:05:38.313Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="一、了解-Session-认证的局限性："><a href="#一、了解-Session-认证的局限性：" class="headerlink" title="一、了解 Session 认证的局限性："></a>一、了解 Session 认证的局限性：</h3><ul><li><p>Session 认证机制需要配合 Cookie 才能实现。由于 Cookie 默认不支持跨域访问，所以，当涉及到前端跨域请求后端接口的时候，<strong>需要做很多额外的配置</strong>，才能实现跨域 Session 认证。</p></li><li><p>当前端需要跨域请求后端接口的时候，不推荐使用 Session 身份认证机制，推荐使用 JWT 认证机制。</p><blockquote><p>注意：</p><blockquote><p>当前端请求后端接口<strong>不存在跨域问题</strong>的时候，<strong>推荐使用 Session</strong> 身份认证机制。</p></blockquote></blockquote></li></ul><h3 id="二、什么是-JWT-？"><a href="#二、什么是-JWT-？" class="headerlink" title="二、什么是 JWT ？"></a>二、什么是 JWT ？</h3><ul><li>JWT（英文全称：JSON Web Token）是目前<strong>最流行</strong>的<strong>跨域认证解决方案</strong>。</li><li>JWT 通常由三部分组成，分别是 Header（头部）、Payload（有效荷载）、Signature（签名）。</li><li><strong>Payload</strong>部分<strong>才是真正的用户信息</strong>，它是用户信息经过加密之后生成的字符串。</li><li>Header 和 Signature 是<strong>安全性相关</strong>的部分，只是为了保证 Token 的安全性。</li></ul><h3 id="三、-JWT-的工作原理："><a href="#三、-JWT-的工作原理：" class="headerlink" title="三、 JWT 的工作原理："></a>三、 JWT 的工作原理：</h3><ul><li>用户的信息通过 Token 字符串的形式，保存在客户端浏览器中。服务器通过还原 Token 字符串的形式来认证用户的身份。</li></ul><p>  <img src="https://s1.imagehub.cc/images/2022/09/13/jwt.png" alt="img"></p><h3 id="四、总结"><a href="#四、总结" class="headerlink" title="四、总结"></a>四、总结</h3><ul><li><strong>先在页面输入用户名和密码，点击登录，登录成功后自动调用 jwt.sign() 方法 加密 生成token，然后把token发送给客户端浏览器。</strong></li><li><strong>当客户端登录成功之后会跳转 首页页面 ，首页页面 就会向服务器发送刚刚保存在浏览器中的token发送出去，服务器就会用 expressJWT()方法 解密 即解析，然后把解析出来的jwt.sign({username:userinfo.username},secretKey,{expiresIn:’30s’})里面的username的值赋给req.user然后就可以，使用 req.user 获取用户信息，然后可用res.send（req.user）返回用户名给首页了</strong></li></ul><ul><li><strong>有访问权限接口  意思是：这个接口(网页)可以获取服务器中的用户名、密码等信息。（即登录了）</strong></li><li><strong>无访问权限接口  意思是：这个接口(网页)不能或不需要获取服务器中的用户名、密码等信息（没有登录）。</strong></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;一、了解-Session-认证的局限性：&quot;&gt;&lt;a href=&quot;#一、了解-Session-认证的局限性：&quot; class=&quot;headerlink&quot; title=&quot;一、了解 Session 认证的局限性：&quot;&gt;&lt;/a&gt;一、了解 Session 认证的局限性：&lt;/h3&gt;&lt;</summary>
+      
+    
+    
+    
+    <category term="笔记" scheme="https://largefan.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="Node" scheme="https://largefan.github.io/tags/Node/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Express-写接口</title>
     <link href="https://largefan.github.io/posts/15.html"/>
     <id>https://largefan.github.io/posts/15.html</id>
